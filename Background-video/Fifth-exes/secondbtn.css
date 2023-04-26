@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .NotToday {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(239, 239, 239);
+  }
+  .btnTwo {
+    position: relative;
+    border: none;
+    padding: 15px 50px;
+    background: rgba(150, 18, 18);
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .btnTwo:before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-top: 4px solid rgb(150, 18, 18);
+    border-left: 4px solid rgb(150, 18, 18);
+    transition: all 0.25s;
+    top: -10px;
+    left: -10px;
+  }
+  .btnTwo:hover:before,
+  .btnTwo:hover:after {
+    height: 100%;
+    width: 100%;
+  }
+  .btnTwo:after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-bottom: 4px solid rgb(150, 18, 18);
+    border-right: 4px solid rgb(150, 18, 18);
+    transition: all 0.25s;
+    bottom: -10px;
+    right: -10px;
+  }
